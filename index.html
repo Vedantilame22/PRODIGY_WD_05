@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Pulse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <h1>🌍 Weather Pulse</h1>
+      <input type="text" id="cityInput" placeholder="🔍 Search by city name..." />
+      <div class="btn-group">
+        <button onclick="getWeatherByCity()">Search</button>
+        <button onclick="getWeatherByLocation()">Use Location</button>
+      </div>
+      <div id="loader" class="loader"></div>
+      <div id="weatherResult" class="weather-info hidden"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
